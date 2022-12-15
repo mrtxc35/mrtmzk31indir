@@ -9,9 +9,9 @@ load_dotenv()
 
 Bot = Client(
     "YouTube-Thumbnail-Downloader",
-    bot_token = os.environ.get("BOT_TOKEN"),
-    api_id = int(os.environ.get("API_ID")),
-    api_hash = os.environ.get("API_HASH")
+    bot_token = os.environ.get("5644947301:AAHHRRTc6JeuvcizG4p24qxlkziwD01SYbw"),
+    api_id = int(os.environ.get("19169979")),
+    api_hash = os.environ.get("2bb8a8a620e6cf1e44a1e9987230e95b")
 )
 
 START_TEXT = """Hello {},
