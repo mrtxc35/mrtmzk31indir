@@ -14,18 +14,18 @@ Bot = Client(
     api_hash = os.environ.get("2bb8a8a620e6cf1e44a1e9987230e95b")
 )
 
-START_TEXT = """Hello {},
-I am a simple youtube thumbnail downloader telegram bot.
+START_TEXT = """Merhaba {},
+Ben Küçük Resim İndirici.
 
 - Send a youtube video link or video ID.
 - I will send the thumbnail.
 - You can also send youtube video link or video id with quality. ( like :- `rokGy0huYEA | sd`
-  - sd - Standard Quality
-  - mq - Medium Quality
-  - hq - High Quality
-  - maxres - Maximum Resolution
+  - sd - Standart Kalite
+  - mq - Orta Kalite
+  - hq - Yüksek Kalite
+  - maxres - Maksimum Çözünürlük
 
-Made by @FayasNoushad"""
+🔸Geliştirici @uslanmazmurti"""
 
 BUTTON = [InlineKeyboardButton('⚙ Join Channel ⚙', url='https://telegram.me/FayasNoushad')]
 
@@ -37,7 +37,7 @@ photo_buttons = InlineKeyboardMarkup(
 async def cb_data(_, message):
     data = message.data.lower()
     if data == "qualities":
-        await message.answer('Select a quality')
+        await message.answer('Kalite Seç')
         buttons = []
         for quality in ytthumb.qualities():
             buttons.append(
